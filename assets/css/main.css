@@ -1,6 +1,97 @@
 @import './base.css';
 
-.home
-{
-    background-color: green;
+body {
+    font-family: var(--mainFont);
+    background-color: #eee
+}
+
+.header {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.header .logo a {
+    color: var(--mainColor);
+}
+
+.header .logo img {
+    width: 35px;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav ul li a {
+    color: #101928;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+
+}
+
+.auth a {
+    font-family: var(--subFont);
+    border-radius: 10px;
+    padding: 5.3px 30.18px;
+
+}
+
+.auth .login {
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.auth .register {
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+
+.menu {
+    display: none;
+
+}
+
+@media screen and (max-width:992px) {
+
+    .menu {
+        display: block;
+        order: 1;
+    }
+
+    .nav,
+    .auth {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+   .container
+   {
+       width: calc(100% - 50px);
+     
+   }
+   .header .logo img {
+    width: 20px;
+}
+.header .logo a {
+  font-size: 14px;
+}
 }
