@@ -5,6 +5,8 @@ body {
     background-color: #eee
 }
 
+
+/*starte css for hedaer*/
 .header {
     background-color: white;
     padding: 20px 0;
@@ -24,13 +26,13 @@ body {
     width: 35px;
 }
 
-.nav ul {
+.navbar ul {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
 
-.nav ul li a {
+.navbar ul li a {
     color: #101928;
 }
 
@@ -68,6 +70,8 @@ body {
 
 }
 
+/*screen*/
+
 @media screen and (max-width:992px) {
 
     .menu {
@@ -75,7 +79,7 @@ body {
         order: 1;
     }
 
-    .nav,
+    .navbar,
     .auth {
         display: none;
     }
@@ -95,3 +99,134 @@ body {
   font-size: 14px;
 }
 }
+
+
+/*end css for hedaer*/
+
+
+
+
+
+
+
+/*fo0000000ter*/
+.footer
+{
+    background-color: #393E46;
+    color: white;
+    padding: 50px 0;
+}
+.footer .row
+{
+    gap: 20px;
+}
+.footer a{
+    color: white;
+}
+.footer-left-side
+{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: calc((100% - 20px)/2);
+
+}
+.footer-left-side .logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.footer-left-side .logo a {
+    color: var(--mainColor);
+}
+
+.footer-left-side .logo img {
+    width: 35px;
+}
+
+.footer-left-side .icons img
+{
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer-right-side
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: calc((100% - 20px)/2);
+
+}
+
+.footer-right-side nav{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 10px;
+}
+
+
+.footer-right-side .footer-item
+{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;   
+}
+
+/*screen for footer*/
+
+@media screen and (max-width:768px) {
+.footer .row{
+    flex-direction: column;
+}
+
+.footer-left-side,
+.footer-right-side
+{
+    width: 100%;
+}
+.footer-right-side
+{
+    gap: 10px;
+}
+.footer-right-side .footer-item
+{
+    width: calc((100% - 10px ) / 4);
+}
+ 
+}
+
+
+@media screen and (max-width:570px) {
+    .footer-right-side
+    {
+        gap: 10px;
+    }
+    .footer-right-side .footer-item
+    {
+        width: calc((100% - 10px ) / 3);
+
+    }
+}
+
+
+@media screen and (max-width:460px) {
+  
+ .footer-right-side .footer-item
+ {
+    width: 100%;
+    text-align: center;
+ }
+ 
+}
+
+
+
+/*End fo0000000ter*/
