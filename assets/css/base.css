@@ -5,6 +5,9 @@
 }
 :root{
     --mainColor :#545BEB;
+    --subColor: #969696;
+    --thColor : #F0C932;
+
     --mainFont:"Poppins",sans-serif;
     --subFont: "Inter", sans-serif;
 }
